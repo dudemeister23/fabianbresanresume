@@ -12,8 +12,8 @@ interface Props {
 
 const ExperienceItem: React.FC<Props> = ({ title, company, location, period, description, highlights }) => {
   return (
-    <div className="page-break-avoid">
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+    <div>
+      <div className="flex flex-col sm:flex-row print:flex-row sm:justify-between print:justify-between sm:items-baseline print:items-baseline mb-2">
         <h3 className="text-xl font-bold text-gray-800">{title}</h3>
         <span className="text-sm font-semibold text-[#1e3a8a] bg-blue-50 px-2 py-0.5 rounded whitespace-nowrap">{period}</span>
       </div>

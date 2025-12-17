@@ -1,1 +1,1 @@
-export const Header = () => null;
+export default () => null;

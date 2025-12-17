@@ -1,1 +1,1 @@
-export const MainColumn = () => null;
+export default () => null;

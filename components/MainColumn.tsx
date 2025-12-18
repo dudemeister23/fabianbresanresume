@@ -43,11 +43,6 @@ export const PrimaryExperience: React.FC = () => (
 export const SecondaryExperience: React.FC = () => (
   <div className="flex flex-col gap-4 mt-4">
     <div className="flex flex-col gap-4">
-      {/* Portfolio is rendered separately in print view - only show here for web */}
-      <div className="print:hidden">
-        <Portfolio />
-      </div>
-
       {/* MedEdicus - Developer Role */}
       <ExperienceItem
         title="Medical Education Content Developer"
@@ -122,6 +117,7 @@ const MainColumn: React.FC = () => {
     <div className="flex flex-col">
       <ProfessionalProfile />
       <PrimaryExperience />
+      <Portfolio />
       <SecondaryExperience />
       <SecondarySections />
     </div>
